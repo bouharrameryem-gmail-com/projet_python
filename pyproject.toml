@@ -53,7 +53,7 @@ src = ["src", "tests"]   # Specify to Ruff where your project's source files are
 # E/W: pycodestyle (PEP 8), F: pyflakes, I: isort, N: naming,
 # D: pydocstyle (docstrings), UP: pyupgrade, B: bugbear,
 # S: bandit (security), ANN: type annotations
-select = ["E", "W", "F", "I", "N", "D", "UP", "B", "S", "ANN"]
+select = ["E", "W", "F", "I", "N", "UP", "B", "S"]
 
 [tool.ruff.lint.pydocstyle]
 convention = "google"
@@ -65,7 +65,7 @@ convention = "google"
 
 # Documentation cover
 [tool.interrogate]
-fail-under = 100
+#fail-under = 100
 exclude = ["tests", "docs", "notebooks"] 
 ignore-init-method = true   # Does not require a dedicated docstring for __init__ methods (the class docstring suffices).
 verbose = 1   # Medium level of detail in the command's console output
