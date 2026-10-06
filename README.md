@@ -4,6 +4,7 @@ Streamlit application and data analysis of SNCF TGV punctuality (open data).
 
 ## Project structure
 
+
 ```
 .
 ├── app.py                      # Streamlit entrypoint (navigation only)
